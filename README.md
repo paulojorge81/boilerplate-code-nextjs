@@ -17,3 +17,4 @@ bun dev
 ## Requirements
 
 - Node.js 18.17 or later.
+- Yarn.
