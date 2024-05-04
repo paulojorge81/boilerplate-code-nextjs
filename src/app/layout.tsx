@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Head from 'next/head'
 
 import { Providers } from '@/providers/Providers'
 
@@ -13,6 +14,10 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="pt-BR">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="/manifest.json"></link>
+      </Head>
       <Providers>
         <body>{children}</body>
       </Providers>
