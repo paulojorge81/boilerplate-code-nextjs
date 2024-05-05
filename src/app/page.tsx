@@ -1,9 +1,7 @@
 'use client'
 
-import { Main } from '@/components/Main'
-
 const Home = () => {
-  return <Main />
+  return <main />
 }
 
 export default Home
