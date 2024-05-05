@@ -10,8 +10,13 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "prepare": "husky",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "dev-storybook": "storybook dev",
+    "build-storybook": "build-storybook -s ./public",
+    "generate-atom": "yarn plop --plopfile ./generators/plopfile-atom.js",
+    "generate-molecule": "yarn plop --plopfile ./generators/plopfile-molecule.js",
+    "generate-organism": "yarn plop --plopfile ./generators/plopfile-organism.js",
+    "generate-template": "yarn plop --plopfile ./generators/plopfile-template.js",
+    "generate-page": "yarn plop --plopfile ./generators/plopfile-page.js"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
@@ -62,6 +67,7 @@
     "jest-environment-jsdom": "^29.4.3",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^15.2.2",
+    "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "storybook": "^8.0.9",
     "typescript": "^5"

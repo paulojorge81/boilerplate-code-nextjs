@@ -9,9 +9,10 @@ const nextConfig = {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  disable: !isProd
-})
+// const withPWA = require('next-pwa')({
+//   dest: 'public',
+//   disable: !isProd
+// })
 
-module.exports = withPWA(nextConfig)
+// module.exports = withPWA(nextConfig)
+export default nextConfig
