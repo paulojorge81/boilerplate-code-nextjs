@@ -1,0 +1,14 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import { {{pascalCase name}} } from '@/components/molecules/{{pascalCase name}}';
+
+const meta: Meta<typeof {{ pascalCase name}}> = {
+  title: 'templates/{{pascalCase name}}',
+  component: {{pascalCase name}}
+}
+
+export default meta
+
+type Story = StoryObj<typeof {{pascalCase name}}>
+
+export const Basic: Story = {}
